@@ -1,1 +1,1 @@
-В проекте используется Airbnb CSS / Sass Styleguide
+## В проекте используется документация разработчиков airbnb https://github.com/airbnb/css
