@@ -124,6 +124,22 @@ p {
     display: inline-block;
     width: 400px;
     height: 400px;
-    background-color: #F1E4FF;
+    position: relative;
+    overflow: hidden;
+    background-color: #20063b;
 }
 
+.hero-7__right-img {
+    
+}
+
+.Hero-7__img-iphone {
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 80px;
+}
+
+.hero-7__img-screen {
+    margin-left: 91.28px;
+    margin-top: 95.12px;
+}
