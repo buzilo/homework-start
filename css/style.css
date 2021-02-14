@@ -2,7 +2,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
-    background-color: blueviolet;
 }
 
 h1, h2, h3, h4, p, ul, li {
@@ -15,7 +14,7 @@ li {
     display: inline-block;
 }
 
-li a {
+a {
     display: block;
     margin-left: 32px;
     text-decoration: none;
@@ -25,6 +24,14 @@ li a {
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+}
+
+a:hover {
+    color:grey;
+}
+
+a:focus {
+    color:black;
 }
 
 h1 {
@@ -99,7 +106,6 @@ p {
 .container {
     width: 1032px;
     margin: 0 auto;
-    background-color: yellowgreen;
 }
 
 .hero-7__left-content {
@@ -109,7 +115,6 @@ p {
     margin-top: 221px;
     margin-right: 92px;
     border-radius: 10px;
-    background-color: cadetblue;
 }
 
 .hero-7__left-button {
@@ -124,6 +129,14 @@ p {
     font-weight: 700;
     line-height: 30px;
     outline: none;
+}
+
+.hero-7__left-button:hover {
+    background-color: #7c19ec;
+}
+
+.hero-7__left-button:focus {
+    background-color: #620bc5;
 }
 
 .hero-7__left-p {
