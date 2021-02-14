@@ -49,9 +49,12 @@ p {
 
 .hero-7__header {
     display:block;
+    border-bottom: 1px solid #E5E9F2 ;
+}
+
+.hero-7_header-content {
     margin: 0 auto;
     width: 1440px;
-    border-bottom: 1px solid #E5E9F2 ;
 }
 
 .hero-7__header img {
