@@ -4,24 +4,13 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
-h1, h2, h3, h4, p, {
+h1, h2, h3, h4, p, ul, li {
     margin: 0;
+    padding: 0;
 }
 
 li {
     display: inline-block;
-    vertical-align: middle;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ul {
-    background-color: bisque;
-    padding: 0;
-    margin: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    vertical-align: middle;
 }
 
 li a {
@@ -34,7 +23,6 @@ li a {
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    background-color: rgb(176, 112, 236);
 }
 
 .hero-7 {
@@ -54,7 +42,6 @@ li a {
 .hero-7__list {
     float: left;
     margin: 22px 0 22px 165px;
-    background-color: rgb(3, 35, 36);
 }
 
 .hero-7__list li:nth-of-type(n+2) {
