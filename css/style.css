@@ -11,14 +11,20 @@ h1, h2, h3, h4, p, {
 li {
     display: inline-block;
     vertical-align: middle;
-    margin-left: -3px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul {
-    margin: 22px 0 22px 165px ;
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
 }
 
-a {
+li a {
     display: block;
     margin-left: 32px;
     text-decoration: none;
@@ -31,12 +37,45 @@ a {
     background-color: rgb(176, 112, 236);
 }
 
+.hero-7 {
+    text-align: center;
+}
+
 .hero-7__header {
-    display:inline-block;
-    background-color: brown;
+    display: inline-block;
+    width: 1440px;
+    border-bottom: 1px solid #E5E9F2 ;
+}
+
+.hero-7__header img {
+    vertical-align: middle;
+}
+
+.hero-7__list {
+    float: left;
+    margin: 22px 0 22px 165px;
+    background-color: rgb(3, 35, 36);
+}
+
+.hero-7__list li:nth-of-type(n+2) {
+    margin-left: -3px;
 }
 
 .hero-7__vector-img {
     margin-left: 7px;
+    margin-right: 3px;
 }
 
+.hero-7__header-app {
+    float: left;
+    margin-left: 258px;
+    margin-top: 16px;
+}
+
+.hero-7__header-app a {
+    float: left;
+}
+
+.hero-7__header-app a:last-child {
+    margin-left: 12px;
+}
