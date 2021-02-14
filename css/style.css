@@ -123,9 +123,12 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    outline: 0;
+    outline: none;
 }
 
+.hero-7__left-p {
+    margin-bottom: 32px;
+}
 
 .hero-7__right-content {
     display: inline-block;
@@ -134,9 +137,8 @@ p {
     margin-top: 197px;
     position: relative;
     overflow: hidden;
-    background-color: #20063b;
+    background-color: #F1E4FF;
     border-radius: 50%;
-    z-index: 1;
     margin-left: -4px;
 }
 
@@ -148,11 +150,13 @@ p {
     z-index: 2;
 }
 
-.hero-7__right-img {
-    
+.hero-7__right-content::after {
+    content:url("../img/Card2.png");
+    position: fixed;
+    margin-top: -135.5px ;
+    margin-left: 145px;
+    z-index: 2;
 }
-
-
 
 .Hero-7__img-iphone {
     position: absolute;
