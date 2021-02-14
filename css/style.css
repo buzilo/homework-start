@@ -2,6 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
+    background-color: blueviolet;
 }
 
 h1, h2, h3, h4, p, ul, li {
@@ -44,7 +45,7 @@ p {
 }
 
 .hero-7 {
-    
+    position: relative;
 }
 
 .hero-7__header {
@@ -104,6 +105,11 @@ p {
 .hero-7__left-content {
     display: inline-block;
     width: 540px;
+    vertical-align: top;
+    margin-top: 221px;
+    margin-right: 92px;
+    border-radius: 10px;
+    background-color: cadetblue;
 }
 
 .hero-7__left-button {
@@ -120,18 +126,33 @@ p {
     outline: 0;
 }
 
+
 .hero-7__right-content {
     display: inline-block;
     width: 400px;
     height: 400px;
+    margin-top: 197px;
     position: relative;
     overflow: hidden;
     background-color: #20063b;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: -4px;
+}
+
+.hero-7__right-content::before {
+    content:url("../img/Card1.png");
+    position: fixed;
+    margin-top: -25px;
+    margin-left: -99px;
+    z-index: 2;
 }
 
 .hero-7__right-img {
     
 }
+
+
 
 .Hero-7__img-iphone {
     position: absolute;
