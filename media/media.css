@@ -1,0 +1,42 @@
+@media only screen and (max-width:1440px) {
+
+    a {
+        margin-left: 27px;
+    }
+
+    h1 {
+        font-size: 51px;
+    }
+
+    .hero-7__header-app {
+        display: none;
+    }
+
+    .hero-7__header {
+    }
+
+    .container {
+        width: 540px;
+    }
+
+    .hero-7__header-list {
+        width: 540px;
+        float: none;
+        margin: 22px auto;
+    }
+
+    .hero-7__header-content {
+        width: 540px;
+    }
+
+    .hero-7__left-content {
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-7__right-content {
+        display: block;
+        margin: 40px auto;
+    }
+}

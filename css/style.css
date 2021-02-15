@@ -60,7 +60,7 @@ p {
     border-bottom: 1px solid #E5E9F2 ;
 }
 
-.hero-7_header-content {
+.hero-7__header-content {
     margin: 0 auto;
     width: 1440px;
 }
@@ -69,12 +69,12 @@ p {
     vertical-align: middle;
 }
 
-.hero-7__list {
+.hero-7__header-list {
     float: left;
     margin: 22px 0 22px 165px;
 }
 
-.hero-7__list li:nth-of-type(n+2) {
+.hero-7__header-list li:nth-of-type(n+2) {
     margin-left: -3px;
 }
 
