@@ -1,9 +1,28 @@
+:root {
+    --base-font-s: 700 14px "Manrope", sans-serif;
+    --base-font-m: 800 14px "Manrope", sans-serif;
+    /* переменные цвета фона, текста */
+    --main-text-color: #18191F;
+    --main-bgcolor: rgb(180, 130, 130);
+
+    /* переменные для кнопок */
+
+    /* переменные для внутренних, внешних отступов */
+}
+
 body {
     margin: 0;
-    font-family: "Manrope", sans-serif;
+    background-color:var(--main-bgcolor);
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+.c1 {
+    font: var(--base-font-s);
+}
+
+.c2 {
+    font: var(--base-font-m);
 }
 
