@@ -25,4 +25,162 @@
         width: 500px;
         margin: 0 auto;
     }
+
+    .selected-blocks {
+        margin-bottom: 12px;
+    }
+
+    :root {
+        --base-size-l: 12px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width:768px) {
+
+    .container {
+        width: 425px;
+    }
+
+    .selected-blocks:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    .selected-content {
+        width: 425px;
+        margin: 0 auto;
+    }
+
+    .selected-blocks {
+        margin-bottom: 12px;
+    }
+
+    :root {
+        --base-size-s: 6px;
+        --base-size-m: 9px;
+        --base-size-l: 6px;
+    }
+
+    .selected-title__img {
+        width: 425px;
+        background-size: cover;
+    }
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:425px) {
+
+    .container {
+        width: var(--base-width-media);
+    }
+
+    .selected-blocks:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    .selected-content {
+        width: var(--base-width-media);
+        margin: 0 auto;
+    }
+
+    .selected-blocks {
+        margin-bottom: 12px;
+    }
+
+    :root {
+        --base-size-s: 6px;
+        --base-size-m: 9px;
+        --base-size-l: 6px;
+        /* ширина блока для media запроса */
+        --base-width-media: 375px;
+    }
+
+    .selected-title__img {
+        width: var(--base-width-media);
+        background-size: cover;
+    }
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:375px) {
+
+    .container {
+        width: var(--base-width-media);
+    }
+
+    .selected-blocks:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    .selected-content {
+        width: var(--base-width-media);
+        margin: 0 auto;
+    }
+
+    .selected-blocks {
+        margin-bottom: 12px;
+    }
+
+    :root {
+        --base-size-s: 4px;
+        --base-size-m: 6px;
+        --base-size-l: 4px;
+        /* ширина блока для media запроса */
+        --base-width-media: 320px;
+    }
+
+    .selected-title__img {
+        width: var(--base-width-media);
+        background-size: cover;
+    }
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+    }
 }
