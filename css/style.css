@@ -1,6 +1,9 @@
 :root {
+
+    /* переменные шрифтов */
     --base-font-s: 700 14px "Manrope", sans-serif;
     --base-font-m: 800 14px "Manrope", sans-serif;
+
     /* переменные цвета фона, текста */
     --main-text-color: #18191F;
     --main-bgcolor: rgb(180, 130, 130);
@@ -9,7 +12,6 @@
     --border-radius: 100px;
     --buttom-text-color: #FFFFFF;
     --buttom-bg-color: #8C30F5;
-    
 
     /* переменные для внутренних, внешних отступов */
     --base-size-s: 8px;
@@ -61,20 +63,22 @@ button {
 }
 
 .selected-title__header {
-    position: relative;
     margin-top: calc(var(--base-size-l) - 4px);
 }
 
 .selected-title__header-left {
-    position: absolute;
-    left: 0;
-    display: inline-block;
+    float: left;
     vertical-align: middle;
+    line-height: 40px;
 }
 
 .selected-title__header-right {
-    position: absolute;
-    right: 0;
-    display: inline-block;
+    float: right;
     vertical-align: middle;
+    line-height: 40px;
+
+}
+
+.clear {
+    clear: both;
 }
