@@ -6,6 +6,10 @@
     --main-bgcolor: rgb(180, 130, 130);
 
     /* переменные для кнопок */
+    --border-radius: 100px;
+    --buttom-text-color: #FFFFFF;
+    --buttom-bg-color: #8C30F5;
+    
 
     /* переменные для внутренних, внешних отступов */
     --base-size-s: 8px;
@@ -15,6 +19,7 @@
 
 body {
     margin: 0;
+    color: var(--main-text-color);
     background-color:var(--main-bgcolor);
 }
 
@@ -22,8 +27,30 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
+p {
+    font-family: var(--base-font-m);
+    text-transform: uppercase;
+}
+
+button {
+    padding: calc(var(--base-size-s) + 2px) calc(var(--base-size-m) + 2px);
+    border-radius: var(--border-radius);
+    color: var(--buttom-text-color);
+    background-color: var(--buttom-bg-color);
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
 .container {
     width: 1110px;
+    background-color: aqua;
+}
+
+.selected-blocks {
+    display: inline-block;
 }
 .c1 {
     font: var(--base-font-s);
@@ -33,3 +60,21 @@ h1, h2, h3, h4, p {
     font: var(--base-font-m);
 }
 
+.selected-title__header {
+    position: relative;
+    margin-top: calc(var(--base-size-l) - 4px);
+}
+
+.selected-title__header-left {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.selected-title__header-right {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
