@@ -81,8 +81,14 @@ button:focus {
     margin: 0 auto;
 }
 
+.selected-content {
+    pointer-events: none;
+}
+
 .selected-blocks {
     display: inline-block;
+    pointer-events: auto;
+    transition: 600ms opacity;
 }
 
 .selected-content:hover .selected-blocks{
