@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1024px) and (max-width:1110px) {
+
+    .container {
+        width: 1024px;
+    }
+    .selected-blocks:nth-of-type(even) {
+        margin-left: 20px;
+    }
+
+    .selected-blocks {
+        margin-bottom: 24px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+    .container {
+        width: 768px;
+    }
+
+    .selected-blocks:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    .selected-content {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
