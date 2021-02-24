@@ -12,6 +12,8 @@
     --border-radius: 100px;
     --buttom-text-color: #FFFFFF;
     --buttom-bg-color: #8C30F5;
+    --buttom-bg-color-hover: #7f1af1;
+    --buttom-bg-color-focus: #6709d3;
 
     /* переменные для внутренних, внешних отступов */
     --base-size-s: 8px;
@@ -64,6 +66,14 @@ button {
     outline: none;
     border: 0;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--buttom-bg-color-hover);
+}
+
+button:focus {
+    background-color: var(--buttom-bg-color-focus);
 }
 
 .container {
