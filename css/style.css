@@ -29,36 +29,56 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
+h2 {
+    font: var(--base-font-m);
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: calc(var(--base-size-l) * 2);
+}
+
+h3 {
+    font: var(--base-font-m);
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: normal;
+    margin-bottom: var(--base-size-l);
+}
+
 p {
-    font-family: var(--base-font-m);
+    font: var(--base-font-m);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 button {
     padding: calc(var(--base-size-s) + 2px) calc(var(--base-size-m) + 2px);
     border-radius: var(--border-radius);
+    margin-bottom: var(--base-size-l);
     color: var(--buttom-text-color);
     background-color: var(--buttom-bg-color);
-    font-family: var(--base-font-s);
-    line-height: 14px;
+    font: var(--base-font-s);
+    line-height: 20px;
     outline: none;
     border: 0;
     cursor: pointer;
 }
+
 .container {
     width: 1110px;
+    margin: 0 auto;
     background-color: aqua;
 }
 
 .selected-blocks {
     display: inline-block;
-}
-.c1 {
-    font: var(--base-font-s);
+    background-color: rgb(93, 93, 168);
 }
 
-.c2 {
-    font: var(--base-font-m);
+.selected-blocks:nth-of-type(even) {
+    margin-left: 106px;
 }
 
 .selected-title__header {
