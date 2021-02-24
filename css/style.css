@@ -39,13 +39,12 @@ button {
     border-radius: var(--border-radius);
     color: var(--buttom-text-color);
     background-color: var(--buttom-bg-color);
+    font-family: var(--base-font-s);
+    line-height: 14px;
     outline: none;
     border: 0;
     cursor: pointer;
 }
-
-
-
 .container {
     width: 1110px;
     background-color: aqua;
@@ -79,6 +78,3 @@ button {
 
 }
 
-.clear {
-    clear: both;
-}
