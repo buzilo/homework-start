@@ -1,4 +1,5 @@
 :root {
+
     /* переменные шрифтов */
     --base-font-s: 700 14px "Manrope", sans-serif;
     --base-font-m: 800 14px "Manrope", sans-serif;
@@ -95,23 +96,23 @@ button:focus {
     margin-bottom: 80px;
 }
 
-.selected-content:hover .selected-blocks{ /*добавляем зтемнение при наведении ко всему контейнеру */
+.selected-content:hover .selected-blocks { /*добавляем зтемнение при наведении ко всему контейнеру */
     opacity: 0.5;
 }
 
-.selected-blocks:nth-of-type(1):hover{ /* отображаем каждый блок при наведении на каждый (ниже) */
+.selected-blocks:nth-of-type(1):hover { /* отображаем каждый блок при наведении на каждый (ниже) */
     opacity: 1;
 }
 
-.selected-blocks:nth-of-type(2):hover{
+.selected-blocks:nth-of-type(2):hover {
     opacity: 1;
 }
 
-.selected-blocks:nth-of-type(3):hover{
+.selected-blocks:nth-of-type(3):hover {
     opacity: 1;
 }
 
-.selected-blocks:nth-of-type(4):hover{
+.selected-blocks:nth-of-type(4):hover {
     opacity: 1;
 }
 
