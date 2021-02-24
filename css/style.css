@@ -8,6 +8,9 @@
     /* переменные для кнопок */
 
     /* переменные для внутренних, внешних отступов */
+    --base-size-s: 8px;
+    --base-size-m: 16px;
+    --base-size-l: 24px;
 }
 
 body {
@@ -17,6 +20,10 @@ body {
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+
+.container {
+    width: 1110px;
 }
 .c1 {
     font: var(--base-font-s);
