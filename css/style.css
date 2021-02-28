@@ -25,7 +25,8 @@ p {
 
 .form__left-p {
   position: absolute;
-  font: 400 30px "Inter-Regular";
+  font: 400 30px "Inter-Regular", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   color: #ffff;
   line-height: 38px;
@@ -33,6 +34,5 @@ p {
   height: 190px;
   top: 370px;
   left: 82px;
-  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */

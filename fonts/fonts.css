@@ -1,9 +1,10 @@
+
 @font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter-Regular';
     font-style: normal;
     font-weight: 400;
     src:
-        url('/fonts/Inter-Regular.ttf') format('ttf');
+        url('../fonts/Inter-Regular.ttf');
 }
 
 @font-face {
@@ -11,7 +12,7 @@
     font-style: normal;
     font-weight: 500;
     src:
-        url('Inter-Medium.ttf') format('ttf');
+        url('../fonts/Inter-Medium.ttf');
 }
 
 @font-face {
@@ -19,7 +20,6 @@
     font-style: normal;
     font-weight: 600;
     src:
-        url('Inter-SemiBold.ttf') format('ttf');
+        url('../fonts/Inter-SemiBold.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
