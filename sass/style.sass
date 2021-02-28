@@ -2,7 +2,9 @@
 $font-inter-400: 400 30px "Inter-Regular", sans-serif
 $font-inter-500: 500 30px "Inter-Medium", sans-serif
 $font-inter-600: 600 30px "Inter-SemiBold", sans-serif
+$size-18px: 18px
 $size-20px: 20px
+
 // -------------
 
 // переменные для внутренних и внешних отступов
@@ -29,7 +31,7 @@ $hover-box-shadow: 0px 4px 10px 3px #000000 11%
 // переменные цветов текста
 $color-grey: #8692A6
 $color-white-grey: #BDBDBD
-$color-white: #ffff
+$color-white: #ffffff
 // -------------
 
 *
@@ -49,16 +51,42 @@ p
     height: 1024px
     background: url("../img/font.jpg") no-repeat
     background-size: contain
+    .form__oasis
+        position: absolute
+        top: 64px
+        right: 484px
+    .form__point
+        position: absolute
+        top: 212px
+        right: 190.15px
+    .form__quotes
+        position: absolute
+        top: 330px
+        left: 82px
+    .form__left-p
+        position: absolute
+        font: $font-inter-400
+        font-weight: 400
+        font-size: $size-20px
+        color: $color-white
+        line-height: 38px
+        width: 473px
+        height: 190px
+        top: 370px
+        left: 82px
+    .form_left-bottomtxt
+        position: absolute
+        top: 582px
+        left: 82px
+        p
+            font: $font-inter-500
+            font-size: $size-18px
+            color: $color-white
+            line-height: 22px
+        img
+            margin-left: 9.67px
+    .form__angle
+        position: absolute
+        top: 639px
+        left: 484px
 
-.form__left-p
-    position: absolute
-    font: $font-inter-400
-    font-weight: 400
-    font-size: $size-20px
-    color: $color-white
-    line-height: 38px
-    width: 473px
-    height: 190px
-    top: 370px
-    left: 82px
-    

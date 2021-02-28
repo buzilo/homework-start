@@ -23,16 +23,57 @@ p {
   background-size: contain;
 }
 
-.form__left-p {
+.form__left-content .form__oasis {
+  position: absolute;
+  top: 64px;
+  right: 484px;
+}
+
+.form__left-content .form__point {
+  position: absolute;
+  top: 212px;
+  right: 190.15px;
+}
+
+.form__left-content .form__quotes {
+  position: absolute;
+  top: 330px;
+  left: 82px;
+}
+
+.form__left-content .form__left-p {
   position: absolute;
   font: 400 30px "Inter-Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #ffff;
+  color: #ffffff;
   line-height: 38px;
   width: 473px;
   height: 190px;
   top: 370px;
   left: 82px;
+}
+
+.form__left-content .form_left-bottomtxt {
+  position: absolute;
+  top: 582px;
+  left: 82px;
+}
+
+.form__left-content .form_left-bottomtxt p {
+  font: 500 30px "Inter-Medium", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.form__left-content .form_left-bottomtxt img {
+  margin-left: 9.67px;
+}
+
+.form__left-content .form__angle {
+  position: absolute;
+  top: 639px;
+  left: 484px;
 }
 /*# sourceMappingURL=style.css.map */
