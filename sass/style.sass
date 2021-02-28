@@ -1,10 +1,11 @@
 // переменные шрифтов
-$font-inter-400: 400 30px "Inter", sans-serif
+$font-inter-400: 400 30px "Inter-Regular"
 $font-inter-500: 500 30px "Inter", sans-serif
 $font-inter-600: 600 30px "Inter", sans-serif
+$size-20px: 20px
 // -------------
 
-// переменные дляя внутренних и внешних отступов
+// переменные для внутренних и внешних отступов
 $base-size-10px: 10px
 $base-size-14px: 14px
 $base-size-16px: 16px
@@ -22,13 +23,41 @@ $border-radius: 6px
 $border-color-active: #1565D8
 $border-color-passive: #8692A6
 $padding-form: 22px 263px 23px 30px
-$hover-box-shadow: box-shadow: 0px 4px 10px 3px #000000 11 %
-
-
+$hover-box-shadow: 0px 4px 10px 3px #000000 11%
 // -------------
 
 // переменные цветов текста
 $color-grey: #8692A6
 $color-white-grey: #BDBDBD
 $color-white: #ffff
+// -------------
 
+*
+    box-sizing: border-box
+
+p
+    margin: 0
+
+.container
+    width: 1440px
+    margin: 0 auto
+
+.form__left-content
+    display: flex
+    position: relative
+    width: 666px
+    height: 1024px
+    background: url("../img/font.jpg") no-repeat
+    background-size: contain
+
+.form__left-p
+    position: absolute
+    font: $font-inter-400
+    font-size: $size-20px
+    color: $color-white
+    line-height: 38px
+    width: 473px
+    height: 190px
+    top: 370px
+    left: 82px
+    letter-spacing: 1px

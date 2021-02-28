@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.form__left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 666px;
+  height: 1024px;
+  background: url("../img/font.jpg") no-repeat;
+  background-size: contain;
+}
+
+.form__left-p {
+  position: absolute;
+  font: 400 30px "Inter-Regular";
+  font-size: 20px;
+  color: #ffff;
+  line-height: 38px;
+  width: 473px;
+  height: 190px;
+  top: 370px;
+  left: 82px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
