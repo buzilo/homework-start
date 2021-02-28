@@ -1,1 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('Inter-Regular.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src:
+        url('Inter-Medium.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src:
+        url('Inter-SemiBold.ttf') format('ttf'),
+}
