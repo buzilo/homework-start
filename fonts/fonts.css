@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter-Medium';
     font-style: normal;
     font-weight: 500;
     src:
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter-SemiBold';
     font-style: normal;
     font-weight: 600;
     src:

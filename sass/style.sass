@@ -1,48 +1,95 @@
 // переменные шрифтов
-$font-inter-400: 400 30px "Inter-Regular", sans-serif
-$font-inter-500: 500 30px "Inter-Medium", sans-serif
-$font-inter-600: 600 30px "Inter-SemiBold", sans-serif
+$font-inter-400: 400 30px "Inter-Regular"
+$font-inter-500: 500 30px "Inter-Medium"
+$font-inter-600: 600 30px "Inter-SemiBold"
 $size-18px: 18px
 $size-20px: 20px
 
 // -------------
 
 // переменные для внутренних и внешних отступов
-$base-size-10px: 10px
+$base-size-10px: 10px //исп
 $base-size-14px: 14px //исп
 $base-size-16px: 16px
 $base-size-20px: 20px
 $base-size-22px: 22px
-$base-size-23px: 23px
-$base-size-24px: 24px
+$base-size-23px: 23px //исп
+$base-size-24px: 24px //исп
 $base-size-30px: 30px
-$base-size-32px: 32px
+$base-size-32px: 32px //исп
 $base-size-33px: 33px
 // -------------
 
 // переменные для форм и кнопок
-%form-base
+%form-input
+    width: 426px
     border: 1px solid #8692A6
-    font-family: "Inter-Medium", sans-serif
+    font: $font-inter-500
     font-size: 14px
     line-height: 17px
     border-radius: 6px
     border: 1px solid #8692A6
-    padding: 22px 263px 23px 30px
+    padding: 22px 0px 23px 30px
     margin: 14px 0 24px 0
     color:#8692A6
     outline: 0
-    &:focus 
-            box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11)
-            border-radius: 6px
-            border: 1px solid #1565D8
-    
+    &:focus
+        box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11)
+        border-radius: 6px
+        border: 1px solid #1565D8
+    &:hover
+        border: 1px solid #1565D8
 
 %form-label
-    font: "Inter-Medium", sans-serif
+    font: $font-inter-500
     font-size: 16px
     line-height: 19.36px
     color: #696F79
+
+%form-hr
+    width: 427px
+    border: 1px solid #F5F5F5
+    margin-left: 0
+    margin-bottom: $base-size-24px
+
+%form-button-register
+    font: $font-inter-500
+    font-size: 16px
+    line-height: 19px
+    padding: 23px 147px 22px 147px
+    margin-bottom: $base-size-23px
+    border-radius: 6px
+    background: #1565D8
+    outline: none
+    border: 0
+    color: #FFFFFF
+    &:hover
+        background: #1565D8 - 10%
+    &:focus
+        background: #1565D8 - 20%
+
+%form-button-google
+    position: relative
+    font: $font-inter-500
+    font-style: normal
+    font-size: 16px
+    line-height: 19px
+    padding: 23px 133px 22px 133px
+    border-radius: 6px
+    background:#FFFFFF
+    outline: none
+    border: 0
+    color: #000000
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08)
+    &:hover
+        background: #FFFFFF - 5%
+    &:focus
+        background: #FFFFFF - 10%
+    img
+        vertical-align: middle
+        position: absolute
+        left: 45px
+
 
 
 $border-radius: 6px
@@ -61,8 +108,10 @@ $color-white: #ffffff
 *
     box-sizing: border-box
 
-p
+p, h1
     margin: 0
+
+
 
 .container
     width: 1440px
@@ -71,6 +120,7 @@ p
 .form_section
     display: flex
 
+// левая часть
 .form__left-content
     position: relative
     width: 666px
@@ -90,9 +140,8 @@ p
         top: 330px
         left: 82px
     .form__left-p
-        position: absolute
         font: $font-inter-400
-        font-weight: 400
+        position: absolute
         font-size: $size-20px
         color: $color-white
         line-height: 38px
@@ -115,18 +164,87 @@ p
         position: absolute
         top: 639px
         left: 484px
+// -------------
 
 .form__right-content
     .form-content
         display: flex
         flex-direction: column
         h1
+            font: $font-inter-600
+            font-size: 30px
+            line-height: 36px
+            letter-spacing: 0em
+            margin-bottom: $base-size-10px
+
         p
+            width: 411px
+            font: $font-inter-400
+            font-size: 18px
+            line-height: 28px
+            letter-spacing: 0em
+            color: $color-white-grey
+            margin-bottom: 8px
+
         hr
+            @extend %form-hr
         label
             @extend %form-label
         input
-            @extend %form-base
+            @extend %form-input
+        #password //кнопка "показать пароль" вставлена картинкой, т.к. стандартными способами css, реализовать не получилось
+            background: url("../img/Show.png") no-repeat  364px
+            margin-bottom: 24px
+        .form__checkbox
+            margin-bottom: 39px
+        .form__btn-Register
+            @extend %form-button-register
+        .form__title
+            font: $font-inter-400
+            font-size: 12px
+            color: #BABABA
+            line-height: 14.52px
+            text-align: center
+            position: relative
+            margin-bottom: $base-size-32px
+            span
+                background: #fff
+                display: inline-block
+                padding: 0 18px
+                position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 0
+                width: 100%
+                height: 1px // толщина линии
+                background: #f3f4f2 // цвет линии
+        .form__btn-google
+            @extend %form-button-google
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // стили для чекбокса
 input[type="checkbox"]:checked,
@@ -168,7 +286,7 @@ input[type="checkbox"]:not(:checked) + label:after
 
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after
-    left: 5px
+    left: 4px
     top: 5px
     width: 7px
     height: 3px

@@ -1,11 +1,12 @@
 .form__right-content .form-content input {
+  width: 426px;
   border: 1px solid #8692A6;
-  font-family: "Inter-Medium", sans-serif;
+  font: 500 30px "Inter-Medium";
   font-size: 14px;
   line-height: 17px;
   border-radius: 6px;
   border: 1px solid #8692A6;
-  padding: 22px 263px 23px 30px;
+  padding: 22px 0px 23px 30px;
   margin: 14px 0 24px 0;
   color: #8692A6;
   outline: 0;
@@ -18,11 +19,73 @@
   border: 1px solid #1565D8;
 }
 
+.form__right-content .form-content input:hover {
+  border: 1px solid #1565D8;
+}
+
 .form__right-content .form-content label {
-  font: "Inter-Medium", sans-serif;
+  font: 500 30px "Inter-Medium";
   font-size: 16px;
   line-height: 19.36px;
   color: #696F79;
+}
+
+.form__right-content .form-content hr {
+  width: 427px;
+  border: 1px solid #F5F5F5;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+.form__right-content .form-content .form__btn-Register {
+  font: 500 30px "Inter-Medium";
+  font-size: 16px;
+  line-height: 19px;
+  padding: 23px 147px 22px 147px;
+  margin-bottom: 23px;
+  border-radius: 6px;
+  background: #1565D8;
+  outline: none;
+  border: 0;
+  color: #FFFFFF;
+}
+
+.form__right-content .form-content .form__btn-Register:hover {
+  background: #0b5bce;
+}
+
+.form__right-content .form-content .form__btn-Register:focus {
+  background: #0151c4;
+}
+
+.form__right-content .form-content .form__btn-google {
+  position: relative;
+  font: 500 30px "Inter-Medium";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 23px 133px 22px 133px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  outline: none;
+  border: 0;
+  color: #000000;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form__right-content .form-content .form__btn-google:hover {
+  background: #fafafa;
+}
+
+.form__right-content .form-content .form__btn-google:focus {
+  background: whitesmoke;
+}
+
+.form__right-content .form-content .form__btn-google img {
+  vertical-align: middle;
+  position: absolute;
+  left: 45px;
 }
 
 * {
@@ -30,7 +93,7 @@
           box-sizing: border-box;
 }
 
-p {
+p, h1 {
   margin: 0;
 }
 
@@ -72,9 +135,8 @@ p {
 }
 
 .form__left-content .form__left-p {
+  font: 400 30px "Inter-Regular";
   position: absolute;
-  font: 400 30px "Inter-Regular", sans-serif;
-  font-weight: 400;
   font-size: 20px;
   color: #ffffff;
   line-height: 38px;
@@ -91,7 +153,7 @@ p {
 }
 
 .form__left-content .form_left-bottomtxt p {
-  font: 500 30px "Inter-Medium", sans-serif;
+  font: 500 30px "Inter-Medium";
   font-size: 18px;
   color: #ffffff;
   line-height: 22px;
@@ -115,6 +177,60 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form__right-content .form-content h1 {
+  font: 600 30px "Inter-SemiBold";
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  margin-bottom: 10px;
+}
+
+.form__right-content .form-content p {
+  width: 411px;
+  font: 400 30px "Inter-Regular";
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #BDBDBD;
+  margin-bottom: 8px;
+}
+
+.form__right-content .form-content #password {
+  background: url("../img/Show.png") no-repeat 364px;
+  margin-bottom: 24px;
+}
+
+.form__right-content .form-content .form__checkbox {
+  margin-bottom: 39px;
+}
+
+.form__right-content .form-content .form__title {
+  font: 400 30px "Inter-Regular";
+  font-size: 12px;
+  color: #BABABA;
+  line-height: 14.52px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.form__right-content .form-content .form__title span {
+  background: #fff;
+  display: inline-block;
+  padding: 0 18px;
+  position: relative;
+}
+
+.form__right-content .form-content .form__title:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f3f4f2;
 }
 
 input[type="checkbox"]:checked,
@@ -159,7 +275,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
-  left: 5px;
+  left: 4px;
   top: 5px;
   width: 7px;
   height: 3px;
