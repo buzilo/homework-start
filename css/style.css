@@ -75,11 +75,13 @@
 }
 
 .form__right-content .form-content .form__btn-google:hover {
-  background: #fafafa;
+  background: #1565D8;
+  color: #FFFFFF;
 }
 
 .form__right-content .form-content .form__btn-google:focus {
-  background: whitesmoke;
+  background: #0151c4;
+  color: #ffffff;
 }
 
 .form__right-content .form-content .form__btn-google img {
@@ -241,7 +243,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .form__right-content .form-content h1 {
-  font: 600 30px "Inter-SemiBold";
+  font: 700 30px "Inter-Bold";
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 0em;

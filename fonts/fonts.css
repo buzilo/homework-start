@@ -23,3 +23,10 @@
         url('../fonts/Inter-SemiBold.ttf');
 }
 
+@font-face {
+    font-family: 'Inter-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('../fonts/Inter-Bold.ttf');
+}

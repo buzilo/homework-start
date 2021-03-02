@@ -2,6 +2,7 @@
 $font-inter-400: 400 30px "Inter-Regular"
 $font-inter-500: 500 30px "Inter-Medium"
 $font-inter-600: 600 30px "Inter-SemiBold"
+$font-inter-700: 700 30px "Inter-Bold"
 $size-18px: 18px
 $size-20px: 20px
 
@@ -82,9 +83,11 @@ $base-size-33px: 33px
     color: #000000
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08)
     &:hover
-        background: #FFFFFF - 5%
+        background: #1565D8
+        color: #FFFFFF
     &:focus
-        background: #FFFFFF - 10%
+        background: #1565D8 - 20%
+        color: #ffffff
     img
         vertical-align: middle
         position: absolute
@@ -168,17 +171,17 @@ p, h1
         left: 484px
 // -------------
 
+// правая часть
 .form__right-content
     .form-content
         display: flex
         flex-direction: column
         h1
-            font: $font-inter-600
+            font: $font-inter-700
             font-size: 30px
             line-height: 36px
             letter-spacing: 0em
             margin-bottom: $base-size-10px
-
         p
             width: 411px
             font: $font-inter-400
@@ -187,7 +190,6 @@ p, h1
             letter-spacing: 0em
             color: $color-white-grey
             margin-bottom: 8px
-
         hr
             @extend %form-hr
         label
@@ -224,6 +226,7 @@ p, h1
                 background: #f3f4f2 // цвет линии
         .form__btn-google
             @extend %form-button-google
+// -------------
 
 
 
