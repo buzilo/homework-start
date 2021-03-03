@@ -38,6 +38,7 @@
 
 .form__right-content .form-content .form__btn-Register {
   font: 500 30px "Inter-Medium";
+  cursor: pointer;
   font-size: 16px;
   line-height: 19px;
   padding: 23px 147px 22px 147px;
@@ -60,6 +61,7 @@
 .form__right-content .form-content .form__btn-google {
   position: relative;
   font: 500 30px "Inter-Medium";
+  cursor: pointer;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
@@ -236,13 +238,14 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .form__right-content .form__right-top {
-  padding: 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 75px 91px 0 58px;
+  margin-bottom: 78px;
 }
 
 .form__right-content .form__right-top .form__left {
@@ -252,14 +255,13 @@ input[type="checkbox"]:checked + label:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: red;
 }
 
 .form__right-content .form__right-top .form__left a {
-  width: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
 }
 
 .form__right-content .form__right-top .form__left a:focus {
@@ -288,10 +290,32 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .form__right-content .form__right-top .form__right {
-  width: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form__right-content .form__right-top .form__right .top {
+  text-align: right;
+  font: 500 30px "Inter-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  color: #BDBDBD;
+  margin-bottom: 4px;
+}
+
+.form__right-content .form__right-top .form__right .bot {
+  font: 600 30px "Inter-SemiBold";
+  font-size: 16px;
+  line-height: 19px;
+  color: #8692A6;
 }
 
 .form__right-content .form-content {
@@ -329,6 +353,10 @@ input[type="checkbox"]:checked + label:after {
 
 .form__right-content .form-content .form__checkbox {
   margin-bottom: 39px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .form__right-content .form-content .form__line {

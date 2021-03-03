@@ -3,6 +3,7 @@ $font-inter-400: 400 30px "Inter-Regular"
 $font-inter-500: 500 30px "Inter-Medium"
 $font-inter-600: 600 30px "Inter-SemiBold"
 $font-inter-700: 700 30px "Inter-Bold"
+$font-size-14px: 14px
 $font-size-16px: 16px
 $font-size-18px: 18px
 $font-size-20px: 20px
@@ -55,6 +56,7 @@ $base-size-33px: 33px
 
 %form-button-register //переменная кнопки регистрации аккаунта
     font: $font-inter-500
+    cursor: pointer
     font-size: 16px
     line-height: 19px
     padding: 23px 147px 22px 147px
@@ -72,6 +74,7 @@ $base-size-33px: 33px
 %form-button-google //переменная кнопки google
     position: relative
     font: $font-inter-500
+    cursor: pointer
     font-style: normal
     font-size: 16px
     line-height: 19px
@@ -175,16 +178,16 @@ p, h1
 .form__right-content
     width: 774px
     .form__right-top
-        padding: 0 50px
         display: flex
         justify-content: space-between
+        padding: 75px 91px 0 58px
+        margin-bottom: 78px
         .form__left
             display: flex
             align-items: center
-            background: red
             a
-                width: 58px
                 display: flex
+                text-decoration: none
                 &:focus
                     filter: brightness(0)
                 &:hover
@@ -199,8 +202,21 @@ p, h1
                     color: $color-grey
                     line-height: 19px
         .form__right
-            width: 106px
             display: flex
+            flex-direction: column
+            justify-content: flex-end
+            .top
+                text-align: right
+                font: $font-inter-500
+                font-size: $font-size-14px
+                line-height: 17px
+                color: $color-white-grey
+                margin-bottom: 4px
+            .bot
+                font: $font-inter-600
+                font-size: $font-size-16px
+                line-height: 19px
+                color: $color-grey
     .form-content
             display: flex
             flex-direction: column
@@ -229,6 +245,7 @@ p, h1
                 margin-bottom: 24px
             .form__checkbox
                 margin-bottom: 39px
+                user-select: none
             .form__btn-Register
                 @extend %form-button-register
             .form__line //линия с текстом посредине
