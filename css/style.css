@@ -1,5 +1,4 @@
 .form__right-content .form-content input {
-  width: 426px;
   border: 1px solid #8692A6;
   font: 500 30px "Inter-Medium";
   font-size: 14px;
@@ -232,6 +231,69 @@ input[type="checkbox"]:checked + label:after {
   left: 484px;
 }
 
+.form__right-content {
+  width: 774px;
+}
+
+.form__right-content .form__right-top {
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__right-content .form__right-top .form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red;
+}
+
+.form__right-content .form__right-top .form__left a {
+  width: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__right-content .form__right-top .form__left a:focus {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.form__right-content .form__right-top .form__left a:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.form__right-content .form__right-top .form__left a img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 9px;
+}
+
+.form__right-content .form__right-top .form__left a p {
+  margin-bottom: 0;
+  font: 600 30px "Inter-SemiBold";
+  font-size: 16px;
+  color: #8692A6;
+  line-height: 19px;
+}
+
+.form__right-content .form__right-top .form__right {
+  width: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form__right-content .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,6 +302,7 @@ input[type="checkbox"]:checked + label:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 221px 0 127px;
 }
 
 .form__right-content .form-content h1 {
@@ -250,8 +313,7 @@ input[type="checkbox"]:checked + label:after {
   margin-bottom: 10px;
 }
 
-.form__right-content .form-content p {
-  width: 411px;
+.form__right-content .form-content .form__right-p {
   font: 400 30px "Inter-Regular";
   font-size: 18px;
   line-height: 28px;
@@ -269,7 +331,7 @@ input[type="checkbox"]:checked + label:after {
   margin-bottom: 39px;
 }
 
-.form__right-content .form-content .form__title {
+.form__right-content .form-content .form__line {
   font: 400 30px "Inter-Regular";
   font-size: 12px;
   color: #BABABA;
@@ -279,14 +341,14 @@ input[type="checkbox"]:checked + label:after {
   margin-bottom: 32px;
 }
 
-.form__right-content .form-content .form__title span {
+.form__right-content .form-content .form__line span {
   background: #fff;
   display: inline-block;
   padding: 0 18px;
   position: relative;
 }
 
-.form__right-content .form-content .form__title:before {
+.form__right-content .form-content .form__line:before {
   content: '';
   position: absolute;
   top: 50%;
