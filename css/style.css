@@ -1,4 +1,32 @@
 h1, h2, h3, h4, p {
   margin: 0;
 }
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #E7E7E7;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+  text-transform: uppercase;
+  color: #B7B7B7;
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  line-height: 11px;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+button:hover {
+  background: whitesmoke;
+}
+
+button:focus {
+  background: #ebebeb;
+}
+
+.c1 p {
+  color: #0275B1;
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  font-size: 30px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,89 @@
-h1, h2, h3, h4, p 
+h1, h2, h3, h4, p
     margin: 0
 
+
 // переменные шрифтов
-$font-inter-400: 400 30px "Inter-Regular" , sans-serif
-$font-inter-500: 500 30px "Inter-Medium" , sans-serif
-$font-inter-600: 600 30px "Inter-SemiBold" , sans-serif
-$font-inter-700: 700 30px "Inter-Bold" , sans-serif
-$font-size-R: 12px // применить в футере
+$font-GothamPro-light: 300 10px "GothamPro-Light" , sans-serif
+$font-GothamPro-Normal: 400 10px "GothamPro-Normal" , sans-serif
+$font-GothamPro-600: 500 12px "GothamPro-Medium" , sans-serif
+$font-GothamPro-700: 700 14px "GothamPro-Bold" , sans-serif
+$font-size-R: 12px // применить в футере для начертания Regular
+// -------------
+
+// переменные для внутренних и внешних отступов
+$base-size-s: 10px
+
+$base-size-l: 40px
+// -------------
+
+// переменные цветов
+$color-grey: rgba(24, 24, 24, 0.6)
+$color-grey-light: #B7B7B7
+$color-blue: #0275B1
+$color-blue-gradient: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+$color-white: #ffffff
+// -------------
+
+// переменные кнопок accept/decline
+%form-buttom-accept
+    padding: 10px 20px
+    border: 0
+    outline: none
+    border-radius: 4px
+    background: $color-blue-gradient
+    text-transform: uppercase
+    color: $color-white
+    font: $font-GothamPro-600
+    line-height: 11px
+    transition: 600ms
+    &:hover
+        background: #0E6795 - 10%
+    &:focus
+        background: #0E6795 - 20%
+
+%form-buttom-decline
+    padding: 10px 20px
+    border: 1px solid #E7E7E7
+    outline: none
+    border-radius: 4px
+    background: $color-white
+    text-transform: uppercase
+    color: $color-grey-light
+    font: $font-GothamPro-600
+    line-height: 11px
+    transition: 600ms
+    &:hover
+        background: $color-white - 10%
+    &:focus
+        background: $color-white - 20%
+
+.c1
+    p
+        color: $color-blue
+        font: $font-GothamPro-600
+        font-size: 30px
+button
+    @extend %form-buttom-decline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // -------------
