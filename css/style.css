@@ -9,6 +9,8 @@
   margin: 14px 0 24px 0;
   color: #8692A6;
   outline: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .form__right-content .form-content input:focus {
@@ -48,6 +50,8 @@
   outline: none;
   border: 0;
   color: #FFFFFF;
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 .form__right-content .form-content .form__btn-Register:hover {
@@ -73,16 +77,16 @@
   color: #000000;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 .form__right-content .form-content .form__btn-google:hover {
-  background: #1565D8;
-  color: #FFFFFF;
+  background: whitesmoke;
 }
 
 .form__right-content .form-content .form__btn-google:focus {
-  background: #0151c4;
-  color: #ffffff;
+  background: #ebebeb;
 }
 
 .form__right-content .form-content .form__btn-google img {
@@ -260,11 +264,6 @@ input[type="checkbox"]:checked + label:after {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-}
-
-.form__right-content .form__right-top .form__left a:focus {
-  -webkit-filter: brightness(0);
-          filter: brightness(0);
 }
 
 .form__right-content .form__right-top .form__left a:hover {
