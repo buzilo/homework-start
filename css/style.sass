@@ -8,9 +8,11 @@ h1, h2, h3, h4, p, ul, li
 // переменные шрифтов
 $font-GothamPro-light: 300 10px "GothamPro-Light" , sans-serif
 $font-GothamPro-Normal: 400 10px "GothamPro-Normal" , sans-serif
-$font-GothamPro-600: 500 12px "GothamPro-Medium" , sans-serif
-$font-GothamPro-700: 700 14px "GothamPro-Bold" , sans-serif
-$font-size-R: 12px // применить в футере для начертания Regular
+$font-GothamPro-Medium: 500 12px "GothamPro-Medium" , sans-serif
+$font-GothamPro-Bold: 700 14px "GothamPro-Bold" , sans-serif
+$font-size-Regular: 12px // применить в футере для начертания Regular
+$font-size-light: 16px // применить в хэдере для начертания light
+
 // -------------
 
 // переменные для внутренних и внешних отступов
@@ -22,10 +24,19 @@ $base-size-l: 40px
 // переменные цветов
 $color-black: rgba(24, 24, 24, 0.6)
 $color-grey-light: #B7B7B7
+$color-grey-search: #CECECE
 $color-blue: #0275B1
 $color-blue-gradient: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
 $color-white: #ffffff
 // -------------
+
+// переменные для бордеров хэдера
+$border-header: 1px solid #F4F4F4
+// -------------
+// переменные для бордеров хэдера при наведении
+$border-header-hover: 2px solid $color-blue
+// -------------
+
 
 // переменные кнопок accept/decline
 %form-buttom-accept
@@ -36,7 +47,7 @@ $color-white: #ffffff
     background: $color-blue-gradient
     text-transform: uppercase
     color: $color-white
-    font: $font-GothamPro-600
+    font: $font-GothamPro-Medium
     line-height: 11px
     transition: 600ms
     &:hover
@@ -52,7 +63,7 @@ $color-white: #ffffff
     background: $color-white
     text-transform: uppercase
     color: $color-grey-light
-    font: $font-GothamPro-600
+    font: $font-GothamPro-Medium
     line-height: 11px
     transition: 600ms
     &:hover
@@ -63,7 +74,7 @@ $color-white: #ffffff
 .c1
     p
         color: $color-blue
-        font: $font-GothamPro-600
+        font: $font-GothamPro-Medium
         font-size: 30px
 button
     @extend %form-buttom-decline
@@ -71,44 +82,131 @@ button
 // работа с хэдером
 .container
     width: 1440px
-    background: purple
+    margin: 0 auto
     .network__header
         display: flex
         align-items: center
         .network__header-logo
-            background-color: red
-            padding: 17px 44px 17px 40px
-            border-right: 1px solid black
+            padding: 17px 43px 17px 40px
+            border-right: $border-header
+            block-size: cover
+            line-height: 0
         ul
-            background-color:
             display: flex
             li
                 list-style-type: none
-                background-color: green
+                &:hover
+                    cursor: pointer
+                    a
+                        border-bottom: $border-header-hover
+                        padding-bottom: 15px
+                        color: $color-blue
+                        p
+                            color: $color-blue
+                        path
+                            stroke: $color-blue
             a
+                &:focus
+                    border-bottom: $border-header-hover
+                    padding-bottom: 15px
+                    color: $color-blue
+                    p
+                        color: $color-blue
+                    path
+                        stroke: $color-blue
                 display: flex
                 flex-direction: column
                 align-items: center
                 text-decoration: none
-                background-color: #fff
+                padding-bottom: 17px
                 p
                     text-transform: uppercase
-                    font: $font-GothamPro-600
+                    font: $font-GothamPro-Medium
                     line-height: 11px
                     color: $color-black
+                svg
+                    margin-bottom: 10px
             .header__feed
-                padding: 0 28px 0 41px
+                padding: 18px 28px 0 41px
             .header__network
-                padding: 0 12px
+                padding: 18px 12px 0 12px
             .header__jobs
-                padding: 0 28px
+                padding: 18px 28.5px 0 28.5px
             .header__chat
                 position: relative
-                padding: 4px 27px 0 28px
+                padding: 22px 27.5px 0 28.5px
                 .header__msg
                     position: absolute
-                    top: -4px
+                    top: 13px
                     right: 27px
             .header__notices
-                padding: 0 17px
-    
+                padding: 18px 37.05px 0 17px
+                border-right: $border-header
+        .header__input
+            position: relative
+            line-height: 0
+            padding: 33px 96.4px 30px 74px
+            input
+                padding: 0
+                border: 0
+                font: $font-GothamPro-light
+                font-size: $font-size-light
+                line-height: 15px
+                color: $color-grey-search
+                margin: 0
+                outline: none
+            img
+                position: absolute
+                left: 30px
+                top: 28px
+            &:hover
+                input
+                    background: rgba(235, 235, 235, 0.527)
+        .header__user
+            display: flex
+            padding: 18px 105px 20px 29px
+            border-left: $border-header
+            border-right: $border-header
+            transition: 800ms
+            &:hover
+                cursor: pointer
+                opacity: 0.7
+            .header__user-txt
+                padding-left: 15px
+                .user-txt__top
+                    margin-bottom: $base-size-s + 1px
+                    font: $font-GothamPro-Medium
+                    text-transform: uppercase
+                    line-height: 11px
+                    span
+                        font: $font-GothamPro-Normal
+                        color: rgba(24, 24, 24, 0.2)
+                        font-size: $font-size-Regular
+                        margin-left: $base-size-s
+                .user-txt__bot
+                    font: $font-GothamPro-Normal
+                    font-size: $font-size-Regular
+                    color: #747474
+                    line-height: 11px
+                    span
+                        font: $font-GothamPro-Medium
+                        color: #02B033
+                        margin-left: 4px
+                        margin-right: 2px
+        .header__other
+            text-align: center
+            padding: 18px 22px 17px 23px
+            border-right: $border-header
+            &:hover
+                cursor: pointer
+                background-color: $color-white - 5%
+            a
+                text-decoration: none
+                img
+                    margin-bottom: 10px
+                p
+                    font: $font-GothamPro-Medium
+                    line-height: 11px
+                    text-transform: uppercase
+                    color: #181818
+

@@ -38,7 +38,7 @@ button:focus {
 
 .container {
   width: 1440px;
-  background: purple;
+  margin: 0 auto;
 }
 
 .container .network__header {
@@ -51,9 +51,10 @@ button:focus {
 }
 
 .container .network__header .network__header-logo {
-  background-color: red;
-  padding: 17px 44px 17px 40px;
-  border-right: 1px solid black;
+  padding: 17px 43px 17px 40px;
+  border-right: 1px solid #F4F4F4;
+  block-size: cover;
+  line-height: 0;
 }
 
 .container .network__header ul {
@@ -64,7 +65,24 @@ button:focus {
 
 .container .network__header ul li {
   list-style-type: none;
-  background-color: green;
+}
+
+.container .network__header ul li:hover {
+  cursor: pointer;
+}
+
+.container .network__header ul li:hover a {
+  border-bottom: 2px solid #0275B1;
+  padding-bottom: 15px;
+  color: #0275B1;
+}
+
+.container .network__header ul li:hover a p {
+  color: #0275B1;
+}
+
+.container .network__header ul li:hover a path {
+  stroke: #0275B1;
 }
 
 .container .network__header ul a {
@@ -79,7 +97,21 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  background-color: #fff;
+  padding-bottom: 17px;
+}
+
+.container .network__header ul a:focus {
+  border-bottom: 2px solid #0275B1;
+  padding-bottom: 15px;
+  color: #0275B1;
+}
+
+.container .network__header ul a:focus p {
+  color: #0275B1;
+}
+
+.container .network__header ul a:focus path {
+  stroke: #0275B1;
 }
 
 .container .network__header ul a p {
@@ -89,30 +121,136 @@ button:focus {
   color: rgba(24, 24, 24, 0.6);
 }
 
+.container .network__header ul a svg {
+  margin-bottom: 10px;
+}
+
 .container .network__header ul .header__feed {
-  padding: 0 28px 0 41px;
+  padding: 18px 28px 0 41px;
 }
 
 .container .network__header ul .header__network {
-  padding: 0 12px;
+  padding: 18px 12px 0 12px;
 }
 
 .container .network__header ul .header__jobs {
-  padding: 0 28px;
+  padding: 18px 28.5px 0 28.5px;
 }
 
 .container .network__header ul .header__chat {
   position: relative;
-  padding: 4px 27px 0 28px;
+  padding: 22px 27.5px 0 28.5px;
 }
 
 .container .network__header ul .header__chat .header__msg {
   position: absolute;
-  top: -4px;
+  top: 13px;
   right: 27px;
 }
 
 .container .network__header ul .header__notices {
-  padding: 0 17px;
+  padding: 18px 37.05px 0 17px;
+  border-right: 1px solid #F4F4F4;
+}
+
+.container .network__header .header__input {
+  position: relative;
+  line-height: 0;
+  padding: 33px 96.4px 30px 74px;
+}
+
+.container .network__header .header__input input {
+  padding: 0;
+  border: 0;
+  font: 300 10px "GothamPro-Light", sans-serif;
+  font-size: 16px;
+  line-height: 15px;
+  color: #CECECE;
+  margin: 0;
+  outline: none;
+}
+
+.container .network__header .header__input img {
+  position: absolute;
+  left: 30px;
+  top: 28px;
+}
+
+.container .network__header .header__input:hover input {
+  background: rgba(235, 235, 235, 0.527);
+}
+
+.container .network__header .header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 105px 20px 29px;
+  border-left: 1px solid #F4F4F4;
+  border-right: 1px solid #F4F4F4;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.container .network__header .header__user:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.container .network__header .header__user .header__user-txt {
+  padding-left: 15px;
+}
+
+.container .network__header .header__user .header__user-txt .user-txt__top {
+  margin-bottom: 11px;
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  text-transform: uppercase;
+  line-height: 11px;
+}
+
+.container .network__header .header__user .header__user-txt .user-txt__top span {
+  font: 400 10px "GothamPro-Normal", sans-serif;
+  color: rgba(24, 24, 24, 0.2);
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.container .network__header .header__user .header__user-txt .user-txt__bot {
+  font: 400 10px "GothamPro-Normal", sans-serif;
+  font-size: 12px;
+  color: #747474;
+  line-height: 11px;
+}
+
+.container .network__header .header__user .header__user-txt .user-txt__bot span {
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  color: #02B033;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.container .network__header .header__other {
+  text-align: center;
+  padding: 18px 22px 17px 23px;
+  border-right: 1px solid #F4F4F4;
+}
+
+.container .network__header .header__other:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.container .network__header .header__other a {
+  text-decoration: none;
+}
+
+.container .network__header .header__other a img {
+  margin-bottom: 10px;
+}
+
+.container .network__header .header__other a p {
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #181818;
 }
 /*# sourceMappingURL=style.css.map */
