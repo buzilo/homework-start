@@ -1,6 +1,9 @@
-h1, h2, h3, h4, p
-    margin: 0
+body
+    box-sizing: border-box
 
+h1, h2, h3, h4, p, ul, li
+    margin: 0
+    padding: 0
 
 // переменные шрифтов
 $font-GothamPro-light: 300 10px "GothamPro-Light" , sans-serif
@@ -17,7 +20,7 @@ $base-size-l: 40px
 // -------------
 
 // переменные цветов
-$color-grey: rgba(24, 24, 24, 0.6)
+$color-black: rgba(24, 24, 24, 0.6)
 $color-grey-light: #B7B7B7
 $color-blue: #0275B1
 $color-blue-gradient: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
@@ -65,25 +68,47 @@ $color-white: #ffffff
 button
     @extend %form-buttom-decline
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------------
+// работа с хэдером
+.container
+    width: 1440px
+    background: purple
+    .network__header
+        display: flex
+        align-items: center
+        .network__header-logo
+            background-color: red
+            padding: 17px 44px 17px 40px
+            border-right: 1px solid black
+        ul
+            background-color:
+            display: flex
+            li
+                list-style-type: none
+                background-color: green
+            a
+                display: flex
+                flex-direction: column
+                align-items: center
+                text-decoration: none
+                background-color: #fff
+                p
+                    text-transform: uppercase
+                    font: $font-GothamPro-600
+                    line-height: 11px
+                    color: $color-black
+            .header__feed
+                padding: 0 28px 0 41px
+            .header__network
+                padding: 0 12px
+            .header__jobs
+                padding: 0 28px
+            .header__chat
+                position: relative
+                padding: 4px 27px 0 28px
+                .header__msg
+                    position: absolute
+                    top: -4px
+                    right: 27px
+            .header__notices
+                padding: 0 17px
+    

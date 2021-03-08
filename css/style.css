@@ -1,5 +1,11 @@
-h1, h2, h3, h4, p {
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, li {
   margin: 0;
+  padding: 0;
 }
 
 button {
@@ -28,5 +34,85 @@ button:focus {
   color: #0275B1;
   font: 500 12px "GothamPro-Medium", sans-serif;
   font-size: 30px;
+}
+
+.container {
+  width: 1440px;
+  background: purple;
+}
+
+.container .network__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .network__header .network__header-logo {
+  background-color: red;
+  padding: 17px 44px 17px 40px;
+  border-right: 1px solid black;
+}
+
+.container .network__header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .network__header ul li {
+  list-style-type: none;
+  background-color: green;
+}
+
+.container .network__header ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.container .network__header ul a p {
+  text-transform: uppercase;
+  font: 500 12px "GothamPro-Medium", sans-serif;
+  line-height: 11px;
+  color: rgba(24, 24, 24, 0.6);
+}
+
+.container .network__header ul .header__feed {
+  padding: 0 28px 0 41px;
+}
+
+.container .network__header ul .header__network {
+  padding: 0 12px;
+}
+
+.container .network__header ul .header__jobs {
+  padding: 0 28px;
+}
+
+.container .network__header ul .header__chat {
+  position: relative;
+  padding: 4px 27px 0 28px;
+}
+
+.container .network__header ul .header__chat .header__msg {
+  position: absolute;
+  top: -4px;
+  right: 27px;
+}
+
+.container .network__header ul .header__notices {
+  padding: 0 17px;
 }
 /*# sourceMappingURL=style.css.map */
