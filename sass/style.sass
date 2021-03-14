@@ -1,41 +1,11 @@
-
-// переменные
-// переменные шрифтов
-// переменные шрифтов
-$font-Mulish-light: 300 10px "Mulish-Light" , sans-serif
-$font-Mulish-Normal: 400 10px "Mulish-Regular" , sans-serif
-$font-Mulish-bold: 700 10px "Mulish-Bold" , sans-serif
-$font-size-1: 18px
-$font-size-2: 21px
-$font-size-3: 48px
-// переменные цветов
-$color-p-grey: #7D7987
-
-// переменные отступов
-$margin-bot-25: 25px
-
-
-// переменные кнопок
-%form-buttom-accept
-    padding: 18px 40px
-    border-radius: 55px
-    border: 0
-    background-color: #458FF6
-    color: #ffffff
-    outline: none
-    cursor: pointer
-    font: $font-Mulish-bold
-    font-size: $font-size-1
-    &:hover
-        background-color: #458FF6 - 10
-    &:focus
-        background-color: #458FF6 - 20
 *
     box-sizing: border-box
 
 h1, h2, h3, h4, p, ul
     margin: 0
     padding: 0
+
+@import "variables.sass"
 
 .container
     width: 1247px
@@ -53,7 +23,7 @@ h1, h2, h3, h4, p, ul
             li
                 list-style-type: none
                 &:nth-of-type(n+2)
-                    margin-left: 40px
+                    margin-left: $margin-left-header-40
             a
                 text-decoration: none
                 font: $font-Mulish-Normal
