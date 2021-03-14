@@ -1,14 +1,37 @@
 
 // переменные
-// паддинги
+// переменные шрифтов
+// переменные шрифтов
+$font-Mulish-light: 300 10px "Mulish-Light" , sans-serif
+$font-Mulish-Normal: 400 10px "Mulish-Regular" , sans-serif
+$font-Mulish-bold: 700 10px "Mulish-Bold" , sans-serif
+$font-size-1: 18px
+$font-size-2: 21px
+$font-size-3: 48px
+// переменные цветов
+$color-p-grey: #7D7987
+
+// переменные отступов
+$margin-bot-25: 25px
 
 
-
-
-    body
-    margin: 0
-    font-family: "Manrope", sans-serif
-
+// переменные кнопок
+%form-buttom-accept
+    padding: 18px 40px
+    border-radius: 55px
+    border: 0
+    background-color: #458FF6
+    color: #ffffff
+    outline: none
+    cursor: pointer
+    font: $font-Mulish-bold
+    font-size: $font-size-1
+    &:hover
+        background-color: #458FF6 - 10
+    &:focus
+        background-color: #458FF6 - 20
+*
+    box-sizing: border-box
 
 h1, h2, h3, h4, p, ul
     margin: 0
@@ -33,6 +56,17 @@ h1, h2, h3, h4, p, ul
                     margin-left: 40px
             a
                 text-decoration: none
+                font: $font-Mulish-Normal
+                font-size: $font-size-1
+                line-height: 23px
+                color: #1F1534
+                opacity: 0.5
+                &:hover
+                    text-shadow: 1px 0 0
+                    opacity: 0.7
+                &:focus
+                    text-shadow: 1px 0 0
+                    opacity: 1
 
 .content
     display: flex
@@ -40,4 +74,16 @@ h1, h2, h3, h4, p, ul
     .content__left
         width: 445px
         margin-top: 106px
-    .content__right
+        h1
+            font: $font-Mulish-bold
+            font-size: $font-size-3
+            line-height: 56px
+            margin-bottom: $margin-bot-25
+        p
+            font: $font-Mulish-light
+            font-size: $font-size-2
+            line-height: 32px
+            color: $color-p-grey
+            margin-bottom: $margin-bot-25 +20
+        button
+            @extend %form-buttom-accept

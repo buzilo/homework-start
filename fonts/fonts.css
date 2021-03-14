@@ -1,1 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+@font-face {
+    font-family: 'Mulish-Light';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        url('../fonts/Mulish-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('../fonts/Mulish-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Mulish-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('../fonts/Mulish-Bold.ttf');
+}

@@ -1,3 +1,28 @@
+.content .content__left button {
+  padding: 18px 40px;
+  border-radius: 55px;
+  border: 0;
+  background-color: #458FF6;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  font: 700 10px "Mulish-Bold", sans-serif;
+  font-size: 18px;
+}
+
+.content .content__left button:hover {
+  background-color: #3b85ec;
+}
+
+.content .content__left button:focus {
+  background-color: #317be2;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
@@ -39,6 +64,21 @@ h1, h2, h3, h4, p, ul {
 
 .header nav ul a {
   text-decoration: none;
+  font: 400 10px "Mulish-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1F1534;
+  opacity: 0.5;
+}
+
+.header nav ul a:hover {
+  text-shadow: 1px 0 0;
+  opacity: 0.7;
+}
+
+.header nav ul a:focus {
+  text-shadow: 1px 0 0;
+  opacity: 1;
 }
 
 .content {
@@ -53,5 +93,20 @@ h1, h2, h3, h4, p, ul {
 .content .content__left {
   width: 445px;
   margin-top: 106px;
+}
+
+.content .content__left h1 {
+  font: 700 10px "Mulish-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.content .content__left p {
+  font: 300 10px "Mulish-Light", sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7D7987;
+  margin-bottom: 45px;
 }
 /*# sourceMappingURL=style.css.map */
