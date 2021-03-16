@@ -94,6 +94,7 @@ h1, h2, h3, h4, p, ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   outline: none;
+  padding-bottom: 40px;
 }
 
 .content .content__left {
