@@ -7,6 +7,10 @@ h1, h2, h3, h4, p, ul
 
 @import "variables.sass"
 
+.slick-initialized .slick-slide
+    display: none
+    outline: none
+
 .container
     width: 1247px
     margin: 0 auto
@@ -41,7 +45,9 @@ h1, h2, h3, h4, p, ul
 .content
     display: flex
     justify-content: space-between
+    outline: none
     .content__left
+        position: relative
         width: 445px
         margin-top: 106px
         h1
@@ -57,3 +63,7 @@ h1, h2, h3, h4, p, ul
             margin-bottom: $margin-bot-25 +20
         button
             @extend %form-buttom-accept
+        img
+            position: absolute
+            top: -123px
+            left: -180px

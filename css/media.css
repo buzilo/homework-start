@@ -1,0 +1,191 @@
+@media only screen and (min-width: 1024px) and (max-width: 1247px) {
+  .container {
+    width: 1024px;
+  }
+  .container .header {
+    padding-bottom: 60px;
+  }
+  .container .header img {
+    padding-left: 55px;
+  }
+  .container .header ul {
+    padding-right: 35px;
+  }
+  .container .content {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .container .content .content__left {
+    margin: 0;
+  }
+  .container .content .content__left img {
+    display: none;
+  }
+  .container .content .content__right img {
+    width: 410px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 768px;
+  }
+  .container .header {
+    padding: 0;
+    padding-bottom: 60px;
+  }
+  .container .header img {
+    padding-left: 20px;
+  }
+  .container .header ul {
+    padding-right: 20px;
+  }
+  .container .header ul li:nth-of-type(n+2) {
+    margin-left: 20px;
+  }
+  .container .content {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .container .content .content__left {
+    margin: 0;
+    width: 400px;
+  }
+  .container .content .content__left h1 {
+    font-size: 38px;
+    line-height: 56px;
+    margin-bottom: 15px;
+  }
+  .container .content .content__left p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #7D7987;
+    margin-bottom: 45px;
+  }
+  .container .content .content__left img {
+    display: none;
+  }
+  .container .content .content__left button {
+    padding: 12px 30px;
+    font-size: 18px -7;
+  }
+  .container .content .content__right img {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .container {
+    width: 425px;
+  }
+  .container .header {
+    padding: 0;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .header img {
+    margin-bottom: 20px;
+  }
+  .container .header ul {
+    padding-right: 20px;
+  }
+  .container .header ul li:nth-of-type(n+2) {
+    margin-left: 20px;
+  }
+  .container .header ul li a {
+    font-size: 15px;
+  }
+  .container .content {
+    width: 425px;
+    margin: 0 auto;
+  }
+  .container .content .content__left {
+    margin: 0;
+    width: 370px;
+  }
+  .container .content .content__left h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .container .content .content__left p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #7D7987;
+    margin-bottom: 25px;
+  }
+  .container .content .content__left img {
+    display: none;
+  }
+  .container .content .content__left button {
+    padding: 12px 30px;
+    font-size: 18px -7;
+  }
+  .container .content .content__right img {
+    width: 420px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .container {
+    width: 425px;
+  }
+  .container .header {
+    padding: 0;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .header img {
+    margin-bottom: 20px;
+  }
+  .container .header ul {
+    padding-right: 20px;
+  }
+  .container .header ul li:nth-of-type(n+2) {
+    margin-left: 20px;
+  }
+  .container .header ul li a {
+    font-size: 15px;
+  }
+  .container .content {
+    width: 425px;
+    margin: 0 auto;
+  }
+  .container .content .content__left {
+    margin: 0;
+    width: 370px;
+  }
+  .container .content .content__left h1 {
+    font-size: 34px;
+    line-height: 56px;
+    margin-bottom: 15px;
+  }
+  .container .content .content__left p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #7D7987;
+    margin-bottom: 25px;
+  }
+  .container .content .content__left img {
+    display: none;
+  }
+  .container .content .content__left button {
+    padding: 12px 30px;
+    font-size: 18px -7;
+  }
+  .container .content .content__right img {
+    width: 420px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

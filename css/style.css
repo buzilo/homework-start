@@ -28,6 +28,11 @@ h1, h2, h3, h4, p, ul {
   background-color: #317be2;
 }
 
+.slick-initialized .slick-slide {
+  display: none;
+  outline: none;
+}
+
 .container {
   width: 1247px;
   margin: 0 auto;
@@ -88,9 +93,11 @@ h1, h2, h3, h4, p, ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  outline: none;
 }
 
 .content .content__left {
+  position: relative;
   width: 445px;
   margin-top: 106px;
 }
@@ -108,5 +115,11 @@ h1, h2, h3, h4, p, ul {
   line-height: 32px;
   color: #7D7987;
   margin-bottom: 45px;
+}
+
+.content .content__left img {
+  position: absolute;
+  top: -123px;
+  left: -180px;
 }
 /*# sourceMappingURL=style.css.map */
