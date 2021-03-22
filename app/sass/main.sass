@@ -2,41 +2,44 @@
 @import "fonts"
 @import "libs"
 
-::placeholder
-	color: #666
+h1, h2, p
+	margin: 0
+	padding: 0
+p
+	font-family: $mulish-regular
+	color: rgba(255, 255, 255, 0.85)
+h1
+	font-family: $mulish-bold
+	font-size: 36px
+	line-height: 48px
+	color: #ffffff
+h2
+	font-family: $mulish-bold
+	font-size: 22px
+	line-height: 48px
+	color: #FFFFFF
+	margin-left: 9px
+.container
+	width: 1120px
+	.content
+		background-color: green
+		padding: 64px 118px 89px 118px
+		.content-top
+			background: purple
+			text-align: center
+		.content-bot
+			display: flex
+			.content-bot__left
+				display: flex
+				.left-img
+					margin-right: 20px
+				.left-txt
+					width: 193px
+					margin-top: 31px
+					margin-right: 110px
+			.content-bot__right
+				
 
-::selection
-	background-color: $accent
-	color: #fff
-
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
-
-.text-center
-	text-align: center
-
-b, strong
-	font-weight: bold
 
 
 
